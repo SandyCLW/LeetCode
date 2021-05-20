@@ -11,5 +11,5 @@ class Solution(object):
                 if not (stack and stack.pop() == match[ch]):
                     return False
             else:
-                stack.append(ch)
+                stack.append(ch) #因為stack若為空,會回傳false,所以要not stack, make reture become true
         return not stack
