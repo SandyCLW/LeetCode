@@ -1,15 +1,19 @@
-leetcode 20
 class Solution(object):
     def isValid(self, s):
         """
         :type s: str
         :rtype: bool
+        Time complexity : o(n)
+        space complexity : o(n)
         """
         stack, match = [], {')': '(', ']': '[', '}': '{'}
         for ch in s:
             if ch in match:
+                print('if = ' + ch)
                 if not (stack and stack.pop() == match[ch]):
                     return False
             else:
-                stack.append(ch) #因為stack若為空,會回傳false,所以要not stack, make reture become true
-        return not stack
+                print('else = ' + ch)
+                stack.append(ch)
+        print(stack)
+        return not stack#因為stack若為空,會回傳false,所以要not stack, make reture become true
