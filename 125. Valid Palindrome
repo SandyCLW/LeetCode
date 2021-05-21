@@ -4,16 +4,25 @@ class Solution(object):
         :type s: str
         :rtype: bool
         """
-        tmp=str()
+#         tmp=str()
+#         for c in s: 
+#             if c.isalnum():
+#                 tmp= tmp + "".join(c.lower())  #str using + perpormance is bad
+               
+#         print(tmp)
+#         print(tmp[::-1])
+#         return tmp == tmp[::-1]
+        
+       
+        tmp=[]
         for c in s: 
             if c.isalnum():
-                tmp= tmp + "".join(c.lower())  
+                tmp.append(c.lower()) 
+        
+               
         print(tmp)
         print(tmp[::-1])
         return tmp == tmp[::-1]
-        
-       
-        
         
         # s = "".join([c.lower() for c in s if c.isalnum()])
         # print(s)
