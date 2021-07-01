@@ -11,4 +11,5 @@
             # Otherwise it adds the number and index to the hash table
             
             
-        
+        time complexty:o(n)
+        space complexty:o(n)
