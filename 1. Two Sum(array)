@@ -1,0 +1,14 @@
+    def twoSum(self, nums: List[int], target: int) -> List[int]:
+        nums_dict = {}
+        # Creates the hash table
+        for i, n in enumerate(nums):
+            complement = target - n
+            # Gets the complement
+            if complement in nums_dict.keys():
+                # Check if the complement exists, then returns
+                return [i, nums_dict[complement]]
+            nums_dict[n] = i
+            # Otherwise it adds the number and index to the hash table
+            
+            
+        
