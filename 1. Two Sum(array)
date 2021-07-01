@@ -2,7 +2,7 @@
         nums_dict = {}
         # Creates the hash table
         for i, n in enumerate(nums):
-            complement = target - n
+            complement = target - n #用互補的概念
             # Gets the complement
             if complement in nums_dict.keys():
                 # Check if the complement exists, then returns
